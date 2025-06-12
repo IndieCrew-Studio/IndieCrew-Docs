@@ -1,0 +1,9 @@
+[submodule "minecraft-scripting-libraries"]
+	path = minecraft-scripting-libraries
+	url = https://github.com/Mojang/minecraft-scripting-libraries
+[submodule "bedrock-samples"]
+	path = bedrock-samples
+	url = https://github.com/Mojang/bedrock-samples
+[submodule "docs"]
+	path = docs
+	url = https://github.com/bedrock-dot-dev/docs
