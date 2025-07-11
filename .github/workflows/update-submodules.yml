@@ -24,6 +24,13 @@ jobs:
         
         # Update all submodules to their latest commits
         git submodule update --remote --merge
+
+        # Fix for unrelated histories in bedrock-samples
+        if [ -d "bedrock-samples" ]; then
+          cd bedrock-samples
+          git pull origin main --allow-unrelated-histories || true
+          cd ..
+        fi
         
         # Check if there are any changes
         if git diff --quiet; then
